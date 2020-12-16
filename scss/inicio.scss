@@ -1,0 +1,37 @@
+/* INICIO */
+.inicio__contenedor-intro__parrafo {
+    font-size: 110%;
+    font-weight: bolder;
+    margin-bottom: 80px;
+}
+
+.inicio__contenedor-life-coaching {
+    margin-bottom: 100px;
+}
+
+.inicio__contenedor-imagen {
+    display: grid;
+    height: 200px;
+    width: 580px;
+    margin: auto;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 200px;
+    grid-column-gap: 20px;
+    grid-template-areas:
+            "comentario imagen";
+}
+
+.inicio__contenedor-imagen__parrafo {
+    grid-area: comentario;
+    box-sizing: border-box;
+}
+
+.imagenTeam {
+    grid-area: imagen;
+    height: 100%;
+    width: auto;
+    border-radius: 25px;
+    border: 5px solid $color-borde;
+    box-sizing: border-box;
+}
+

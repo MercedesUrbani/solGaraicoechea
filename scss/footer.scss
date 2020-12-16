@@ -1,0 +1,41 @@
+/* PIE DE PAGINA */
+footer {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--color-texto2);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+footer, .contenedorPrincipal:after {
+    height: 40px; 
+}
+
+.footer {
+    border-top: 2px solid $color-borde;
+}
+
+.footerContacto {
+    position: relative;
+    bottom: 20px;
+}
+
+.listaFooter {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.listaFooter li {
+    padding: 0 8px;
+    display: inline-block;
+}
+
+.logoChico {
+    width: auto;
+    height: 25px;
+}

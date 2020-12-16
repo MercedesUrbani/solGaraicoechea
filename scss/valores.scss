@@ -1,0 +1,50 @@
+/* CARDS DE VALORES */
+.contenedorCards {
+    width: 100%;
+    display: flex; 
+    justify-content: space-evenly; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color:  $color-texto2;
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@mixin cards ($width, $height, $padding, $border-radius, $border, $background-color){
+    width: $width;
+    height: $height;
+    padding: $padding;
+    border-radius: $border-radius;
+    border: $border;
+    background-color: $background-color;
+}
+
+.cardChica {
+    @include cards (240px, 240px, 15px, 25px, 5px solid $color-borde, $color-fondo);
+}
+
+.cardGrande {
+    @include cards (22%, 400px, 15px, 25px, 5px solid $color-borde, $color-fondo);
+    margin-bottom: 20px;
+}
+
+
+.cardGrande:hover {
+    transform: scale(1.1 , 1.1) translate(0, 20px);
+    background-color: $color-fondohover;
+    z-index: 3;
+}
+
+h4 {
+    color: $color-texto3;
+    letter-spacing: 10px;
+}

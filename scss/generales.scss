@@ -1,0 +1,66 @@
+
+
+/* DEFINICIONES GENERALES */
+a, a:visited, a:active, a:link {
+    text-decoration: none;
+    color: $color-link;
+}
+
+a:hover {
+    color: $color-linkAct
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    position: relative;
+    background-image: url("../imagenes/fondoVerdeAcuarelaV.jpg");
+    background-size: cover; 
+    font-family: 'Raleway', sans-serif; 
+    margin: 0; 
+    padding-top:60px ;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+.contenedorPrincipal {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 100vw;
+    min-height: 100%;
+    margin-bottom: -40px;
+}
+
+.contenedorPrincipal:after {
+    content: "";
+    display: block;
+}
+
+.contenedor {
+    padding: 100px 60px;
+}
+
+.parrafo {
+    color: $color-texto2;
+    line-height: 1.4;
+    text-align: justify;
+}

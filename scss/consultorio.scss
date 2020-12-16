@@ -1,0 +1,12 @@
+/* CONSULTORIO */
+$size: 600px;
+
+.miConsultorio {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagenConsultorio {
+    width: $size;
+    height: 0,75*$size;
+}
