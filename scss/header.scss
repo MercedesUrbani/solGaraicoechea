@@ -1,0 +1,41 @@
+/* HEADER */
+header {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+
+.sol{
+    height: 90px;
+    width: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    padding-right: 10px;
+}
+
+.titulo {
+    margin: 4px 0px;
+    color: $color-texto1;
+    font-style: italic;
+}
+
+.subtitulo {
+    color: $color-texto1;
+    font-style: italic;
+}
+
+.bajada {
+    font-size: 80%;
+    font-style: italic;
+}

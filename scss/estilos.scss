@@ -1,0 +1,28 @@
+$color-texto1: rgb(173, 18, 44);
+$color-texto2: rgb(117, 8, 63);
+$color-texto3: crimson;
+$color-navBar: rgb(36, 204, 120);
+$color-link: rgb(68, 4, 36);
+$color-linkAct:  rgb(184, 9, 9);
+$color-borde: honeydew;
+$color-fondo: #fff;
+$color-fondohover: rgba(252, 160, 137, 0.6); 
+$color-tablaborde: rgb(14, 179, 96);
+$color-tablatitulo:  rgb(173, 18, 44);
+$color-form:  rgb(2, 15, 8);
+$color-grad: rgb(93, 196, 107);
+$color-shadow:  rgba(0, 0, 0, 0);
+
+
+@import 'generales';
+@import 'header';
+@import 'menu';
+@import 'inicio';
+@import 'sobreMi';
+@import 'valores';
+@import 'coachingOntologico';
+@import 'sesiones';
+@import 'consultorio';
+@import 'contacto';
+@import 'footer';
+@import 'mediaQueries';

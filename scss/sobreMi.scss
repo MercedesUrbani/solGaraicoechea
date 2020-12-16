@@ -1,0 +1,124 @@
+/* SOBRE MI */
+.contenedorSobreMi {
+    margin-top: -100px;
+}
+
+/* buscar fotos de Sol, consultorio */
+.principios {
+    color: $color-texto2;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+.gridGeneral {
+    display: grid;
+    align-content: space-between;
+    justify-content: center;
+    padding-left: 5%;
+    width: 90%;
+}
+
+.experiencia {
+    @extend .gridGeneral;
+    margin-bottom: 100px;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 100px 150px 100px 50px;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+    grid-template-areas:
+        "solCel comienzo" 
+        "solCel correcto"
+        "inquietud inquietud"
+        "vocacion vocacion";
+}
+
+.imagenCelular {
+    grid-area: solCel;
+    max-width: 100%;
+    max-height: 100%;
+    justify-self: center;
+}
+
+.comienzo {
+    grid-area: comienzo;
+}
+
+.correcto {
+    grid-area: correcto;
+}
+
+.inquietud {
+    grid-area: inquietud;
+}
+
+.vocacion {
+    grid-area: vocacion;
+    max-width: 500px;
+    justify-self: center;
+}
+
+.formacionGrid {
+    @extend .gridGeneral;
+    margin-bottom: 100px;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 30px 200px 150px 40px 70px 40px 60px 0px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "miFormacion miFormacion"
+        "formacion solNotebook" 
+        "trayectoria solNotebook"
+        "nuevoCamino nuevoCamino"
+        "camino camino"
+        "compromiso compromiso"
+        "premisa premisa"
+        "juntos juntos";
+}
+
+.miFormacion {
+    grid-area: miFormacion;
+}
+
+.formacion {
+    grid-area: formacion;
+}
+
+.imagenSolNotebook {
+    grid-area: solNotebook;
+    max-width: 100%;
+    max-height: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.trayectoria {
+    grid-area: trayectoria;
+}
+
+.nuevoCamino {
+    grid-area: nuevoCamino;
+}
+
+.camino {
+    grid-area: camino;
+}
+
+.compromiso {
+    grid-area: compromiso;
+    max-width: 500px;
+    justify-self: center;
+}
+
+.premisa {
+    grid-area: premisa;
+}
+
+.juntos {
+    grid-area: juntos;
+    max-width: 500px;
+    justify-self: center;
+}
+
+.subMi {
+    margin: 50px 0;
+}

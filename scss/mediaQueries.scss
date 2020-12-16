@@ -1,0 +1,256 @@
+/* MOBILE */
+@media (max-width: 767px) {
+    .contacto {
+        max-width: initial;
+        margin: 0;
+        padding: 0;
+        background-size: auto;
+    }
+
+    .navBar {
+        display: none;
+    } 
+
+    .navBarMobile {
+        .fas {
+            font-size: 24px;
+            padding: 12px 0 0 8px;
+        }
+    }
+
+    .sol {
+        flex-direction: row;
+        width: 90%;
+        height: auto;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 80%;
+    }
+
+    .logo {
+        height: 30px;
+        width: auto;
+        padding: 0 0 0 15px;
+    }
+
+    .navBarMobile {
+        display: flex;
+        background-color: $color-navBar;
+        top: 0;
+        z-index: 2;
+        padding: 12px;
+        border-radius: 5px;
+        border: 2px solid $color-borde;
+        position: fixed;
+        width: 100%;
+    }  
+
+    .navBarList {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        font-size: 120%;
+    }
+
+    .navBarList li {
+        padding: 5px 0;
+    }
+
+    .navBarContent {
+        display: none;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+
+    .navBarOpen, .navBarClose {
+        width: 10%;
+        display: inline-block;
+    }
+
+    .navBarCheck {
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .navBarInput:checked ~ header {
+        position: absolute;
+    }
+
+    .navBarInput, .navBarClose {
+        display:none;
+    }
+
+    .navBarInput:checked ~ .navBarClose {
+        display: block;
+    }
+
+    .navBarInput:checked ~ .navBarOpen {
+        display: none;
+    }
+
+    .navBarInput:checked ~ .navBarContent {
+        display: flex;
+    }
+
+    /* CONTACTO MOBILE */
+    textarea {
+        width: 200px;
+        height: 100px;
+    }
+
+    .listaContacto li {
+        padding: 0;
+    }
+
+    .listaContacto {
+        margin: 0;
+        padding-inline-start: 20px;
+    }
+
+    /* FOOTER MOBILE */
+    .listaFooter {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 4px;
+    }
+
+    .footerContacto {
+        height: auto;
+        bottom: 0;
+    }  
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contacto {
+        max-width: initial;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-size: auto;
+    }
+
+    .navBar {
+        display: none;
+    } 
+
+    .navBarMobile .fas {
+        font-size: 24px;
+        padding: 12px 0 0 8px;
+    }
+
+    .sol {
+        flex-direction: row;
+        width: 90%;
+        height: auto;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 80%;
+    }
+
+    .logo {
+        height: 30px;
+        width: auto;
+        padding: 0 0 0 15px;
+    }
+
+    .navBarMobile {
+        display: flex;
+        background-color: $color-navBar;
+        top: 0;
+        z-index: 2;
+        padding: 12px;
+        border-radius: 5px;
+        border: 2px solid $color-borde;
+        position: fixed;
+        width: 100%;
+    }  
+
+    .navBarList {
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+        font-size: 120%;
+        li {
+            padding: 5px 15px;
+        }
+    }
+
+    .navBarContent {
+        display: none;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+
+    .navBarOpen, .navBarClose {
+        width: 10%;
+        display: inline-block;
+    }
+
+    .navBarCheck {
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .navBarInput:checked ~ header {
+        position: absolute;
+    }
+
+    .navBarInput, .navBarClose {
+        display:none;
+    }
+
+    .navBarInput:checked ~ .navBarClose {
+        display: block;
+    }
+
+    .navBarInput:checked ~ .navBarOpen {
+        display: none;
+    }
+
+    .navBarInput:checked ~ .navBarContent {
+        display: flex;
+    }
+
+    /* CONTACTO TABLET */
+    textarea {
+        width: 200px;
+        height: 100px;
+    }
+
+    .listaContacto {
+        margin: 0;
+        padding-inline-start: 20px;
+        li {
+            padding: 0;
+        }
+    }
+
+    /* FOOTER TABLET */
+    .listaFooter {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 4px;
+    }
+
+    .footerContacto {
+        height: auto;
+        position: fixed;
+        bottom: 0;
+    }
+   
+}
